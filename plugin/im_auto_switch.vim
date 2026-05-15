@@ -165,9 +165,7 @@ augroup VimInputAutoSwitch
     autocmd CursorHoldI * call im_auto_switch#save_input_if_insert()
   endif
 
-  " NOTE:
+  " XXX:
   " CmdlineLeave can be triggered while insert-mode IM state is still relevant.
-  " Enable manually only if you really want this behavior.
-  "
   " autocmd CmdlineLeave * call im_auto_switch#set_english()
 augroup END
